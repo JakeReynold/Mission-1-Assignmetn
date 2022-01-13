@@ -1,9 +1,11 @@
-﻿body {
+﻿/*Changes for the body*/
+body {
     font-family: Tahoma;
     background-color: whitesmoke;
     color: darkslategray;
 }
 
+/*label changes*/
 label {
     color: lightslategray;
     width: 100px;
@@ -11,6 +13,7 @@ label {
     padding: 5px;
 }
 
+/*bolding the h1 and h3 tags found on the index page*/
 h1 {
     font-weight: bold
 }
