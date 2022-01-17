@@ -30,7 +30,7 @@ namespace Mission_1_Assignmetn
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Blajh}/{action=Index}/{id?}"
+                    pattern: "{controller=Blah}/{action=Index}/{id?}"
                     );
             });
         }
