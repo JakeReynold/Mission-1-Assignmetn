@@ -12,5 +12,10 @@ namespace Mission_1_Assignmetn.Controllers
         {
             return View();
         }
+
+        public IActionResult GradeCalculator()
+        {
+            return View();
+        }
     }
 }

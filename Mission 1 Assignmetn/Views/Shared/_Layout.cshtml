@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <!--Head containing the title, icon, and links to the bootstrap and css docs being used-->
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/StyleSheet.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <nav>
+        <a asp-controller="Blah" asp-action="Index">Home</a> | 
+        <a asp-controller="Blah" asp-action="GradeCalculator">Grade Calculator</a>
+    </nav>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <!--Javascript and Jquery files that my program runs-->
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/jquery/jquery-3.6.0.min.js"></script>
+
+</body>
+</html>

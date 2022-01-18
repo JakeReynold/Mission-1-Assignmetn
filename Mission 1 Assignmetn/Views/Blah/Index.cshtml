@@ -1,61 +1,27 @@
 ﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+    ViewData["Title"] = "Jacob Reynolds";
 }
 
-<!DOCTYPE html>
-<html>
-<head>
-    <!--Head containing the title, icon, and links to the bootstrap and css docs being used-->
-    <meta charset="utf-8" />
-    <title>Jake Reynolds</title>
-    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/StyleSheet.css" rel="stylesheet" />
-</head>
+<!--Header and image-->
+<h1>Jake Reynolds</h1>
+<img src="img/projectsurfing.jpg" width="175" />
 
-<body>
-    <!--Header and image-->
-    <h1>Jake Reynolds</h1>
-    <img src="img/projectsurfing.jpg" width="175" />
+<!--paragraph of what I want out of the class-->
+<p>
+    I have a goal of starting a business this summer, and I want to build the website that my potential
+    customers will interact with. I'm hoping that in IS 413 I will learn some useful skills that will help
+    me achieve that goal this summer. I also want to build some better habits as a student using this class,
+    and since there is so much to stay on top of I think this class would be a good opportunity to do so.
+</p>
 
-    <!--paragraph of what I want out of the class-->
-    <p>
-        I have a goal of starting a business this summer, and I want to build the website that my potential
-        customers will interact with. I'm hoping that in IS 413 I will learn some useful skills that will help
-        me achieve that goal this summer. I also want to build some better habits as a student using this class,
-        and since there is so much to stay on top of I think this class would be a good opportunity to do so.
-    </p>
+<!--Paragraph and list describing the top three jobs I want to pursue after graduation-->
+<p>The top jobs I want to pursue after I graduate are:</p>
+<ul>
+    <li>Project Manager</li>
+    <li>Software Engineer</li>
+    <li>Data Analyst</li>
+</ul>
 
-    <!--Paragraph and list describing the top three jobs I want to pursue after graduation-->
-    <p>The top jobs I want to pursue after I graduate are:</p>
-    <ul>
-        <li>Project Manager</li>
-        <li>Software Engineer</li>
-        <li>Data Analyst</li>
-    </ul>
-
-    <!--Grade calculator form-->
-    <h3>Grade Calculator</h3>
-    <p>Enter projected percentages for the following areas</p>
-    <form>
-        <label>Assignments:</label>
-        <input id="assignments" /> <br />
-        <label>Group Project:</label>
-        <input id="project" /> <br />
-        <label>Quizzes:</label>
-        <input id="quizzes" /> <br />
-        <label>Exams:</label>
-        <input id="exams" /> <br />
-        <label>INTEX:</label>
-        <input id="intex" /> <br />
-        <input id="SubmitBtn" type="button" value="Calculate" />
-    </form>
-
-    <!--Javascript and Jquery files that my program runs-->
-    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="lib/jquery/jquery-3.6.0.min.js"></script>
-    <script src="js/GradeCalculator.js"></script>
-</body>
-</html>
