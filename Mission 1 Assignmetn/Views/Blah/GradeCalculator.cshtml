@@ -5,22 +5,23 @@
     ViewData["Title"] = "Grade Calculator";
 }
 
+@model GradeCalculatorModel;
+
 <!--Grade calculator form-->
-<h3>Grade Calculator</h3>
+<h1>Grade Calculator</h1>
 <p>Enter projected percentages for the following areas</p>
-<form>
+<form method="post">
     <label>Assignments:</label>
-    <input id="assignments" /> <br />
+    <input id="assignments" asp-for="Assignments"/> <br />
     <label>Group Project:</label>
-    <input id="project" /> <br />
+    <input id="project" asp-for="Projects"/> <br />
     <label>Quizzes:</label>
-    <input id="quizzes" /> <br />
+    <input id="quizzes" asp-for="Quizzes"/> <br />
     <label>Exams:</label>
-    <input id="exams" /> <br />
+    <input id="exams" asp-for="Exams"/> <br />
     <label>INTEX:</label>
-    <input id="intex" /> <br />
-    <input id="SubmitBtn" type="button" value="Calculate" />
+    <input id="intex" asp-for="Intex"/> <br />
+    <input id="SubmitBtn" type="submit" value="Calculate" />
 </form>
 
-<!--Javascript and Jquery files that my program runs-->
-<script src="js/GradeCalculator.js"></script>
+<div asp-validation-summary="All"></div>
