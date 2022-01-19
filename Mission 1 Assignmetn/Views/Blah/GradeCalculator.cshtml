@@ -7,10 +7,16 @@
 
 @model GradeCalculatorModel;
 
-<!--Grade calculator form-->
+<!--Grade calculator page title-->
 <h1>Grade Calculator</h1>
-<img src="~/img/mathematics-math.gif" />
+
+@*Gif file to make the page more fun*@
+<img src="~/img/mathematics-math.gif" height="125"/>
+
+<!-- Instructions for calculator form -->
 <p>Enter projected percentages for the following areas</p>
+
+@*Grade calculator form*@
 <form method="post">
     <label>Assignments:</label>
     <input id="assignments" asp-for="Assignments"/> <br />
@@ -25,4 +31,5 @@
     <input id="SubmitBtn" type="submit" value="Calculate" />
 </form>
 
+@*Div tag that displays an error when requirements aren't met for the fields in the form*@
 <div asp-validation-summary="All"></div>
